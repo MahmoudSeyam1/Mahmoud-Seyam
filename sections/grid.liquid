@@ -1,0 +1,58 @@
+<section class="custom-grid">
+  <h2>Tisso vision in the wild</h2>
+  <div class="grid">
+    <div class="grid-item"><img width="100%" height="auto" src="{{ 'image1.png' | asset_url }}" alt="Image1"></div>
+    <div class="grid-item"><img width="100%" height="auto" src="{{ 'image2.png' | asset_url }}" alt="Image1"></div>
+    <div class="grid-item"><img width="100%" height="auto" src="{{ 'image3.png' | asset_url }}" alt="Image1"></div>
+    <div class="grid-item"><img width="100%" height="auto" src="{{ 'image4.png' | asset_url }}" alt="Image1"></div>
+    <div class="grid-item"><img width="100%" height="auto" src="{{ 'image5.png' | asset_url }}" alt="Image1"></div>
+    <div class="grid-item"><img width="100%" height="auto" src="{{ 'image6.png' | asset_url }}" alt="Image1"></div>
+    </div>
+</section>
+
+<!--grid style  -->
+
+
+<style>
+  .custom-grid{
+    padding: 30px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  .custom-grid h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  .grid{
+    justify-content:center;
+    align-items: center;
+  }
+  .grid-item img{
+    width:auto;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  @media (max-width : 768px){
+    .custom-grid h2{
+      font-size: 1.5rem;
+    }
+    .grid{
+      gap: 10px;
+      
+    }
+    .grid-item img{
+      border-radius:3px;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
